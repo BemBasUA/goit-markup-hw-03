@@ -85,12 +85,12 @@ body {
   cursor: pointer;
 }
 /* features section */
-.features .list-title {
+.features-list .list-title {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.features .text {
+.features-list .text {
   line-height: 1.71;
   color: var(--secondary-text-color);
 }
