@@ -130,7 +130,7 @@ body {
   color: var(--primary-white-color);
 }
 .hidden {
-  visibility: hidden;
+  display: none;
 }
 .button {
   font-family: inherit;
@@ -169,6 +169,9 @@ body {
   color: var(--secondary-text-color);
 }
 /* About us section */
+.about-us.section {
+  padding-top: 0;
+}
 .about-us-list {
   display: flex;
 }
@@ -190,6 +193,9 @@ body {
 /* Our team section */
 .our-team {
   background-color: var(--primary-background-color);
+}
+.our-team.section {
+  padding-top: 0;
 }
 .our-team-list {
   display: flex;
@@ -223,18 +229,22 @@ body {
 /* Footer */
 .footer {
   background-color: var(--secondary-background-color);
-  padding: 40px 0 60px;
+  padding: 60px 0 60px;
 }
 .secondary.logo {
+  padding: 0;
   display: inline-block;
-  padding: 20px 0;
   margin-right: 0;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 .address .link {
   font-style: normal;
   line-height: 1.71;
   color: var(--address-text-color);
+}
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address .map.link {
   color: var(--primary-white-color);
@@ -276,7 +286,11 @@ body {
   flex-wrap: wrap;
 }
 .examples-list .card-content {
-  padding: 20px 0;
+  padding: 20px 24px;
+}
+.examples-list .item {
+  max-width: 370px;
+  border: 1px solid #eeeeee;
 }
 .examples-list .item:not(:nth-child(3n)) {
   margin-right: 30px;
